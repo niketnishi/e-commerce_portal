@@ -30,6 +30,9 @@ a {
     text-decoration: none;
     color: #000000;
 }
+label {
+    color: #757575;
+}
 
 /*Header*/
 #h3_header h3 {
@@ -145,12 +148,36 @@ li a {
     justify-self: start;
     padding: 20px;
 }
+.size_qty {
+    margin-top: 30px;
+}
+.size_qty > div {
+    border-top: 1px solid #757575;
+    padding: 15px 0px ;
+}
+#qty, #size {
+    margin: 0;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    width: 83%;
+}
+.prd_qty {
+    border-bottom: 1px solid #757575;
+}
+.prd_size  select {
+    float: right;
+}
+.prd_qty select {
+    float: right;
+}
+
 .prd_desc > p {
     font-size: 30px;
     margin: 0px 0px 10px 0px;
 }
 .short_desc {
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 .short_desc p, ul {
     color: #757575;
@@ -161,6 +188,7 @@ li a {
 .short_desc ul li {
     margin-left: 25px;
 }
+
 @media screen and (min-width: 1250px) {
     #product_desc {
         grid-template-columns: repeat(2, 1fr);
