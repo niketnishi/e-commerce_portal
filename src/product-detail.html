@@ -18,7 +18,7 @@
                 </div>
                 <h3><a href="index.html" target="_self">SHOP</a></h3>
                 <div id="cart_fa">
-                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
                 </div>
                 <nav>
                     <ul class="nav_bar">
@@ -38,22 +38,26 @@
                 <p>Men's Tech Shell Full-Zip</p>
                 <span style="font-size: 20px;color: #757575;">$50.20</span>
                 <div class="size_qty">
-                    <hr/><label for="prd_size">Size</label>
-                    <select id="prd_size" name="product_size">
-                        <option value="extra_small">XS</option>
-                        <option value="small">S</option>
-                        <option value="medium">M</option>
-                        <option value="large">L</option>
-                        <option value="extra_large">XL</option>
-                    </select><hr/>
-                    <label for="qty">Quantity</label>
-                    <select id="qty" name="quantity">
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five</option>
-                    </select><hr/>
+                    <div class="prd_size">
+                        <label for="size">Size</label>
+                        <select id="size" name="product_size">
+                            <option value="extra_small">XS</option>
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                            <option value="extra_large">XL</option>
+                        </select>
+                    </div>
+                    <div class="prd_qty">
+                        <label for="qty">Quantity</label>
+                        <select id="qty" name="quantity">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="short_desc">
                     <strong>Description</strong>
@@ -67,7 +71,7 @@
                         <li>Available in forest green with the white Google logo embroidered at left chest.</li>
                     </ul>
                 </div>
-                <button type="button" name="add_to_cart">ADD TO CART</button>
+                <a href="cart.html" target="_self"><button type="button" name="add_to_cart">ADD TO CART</button></a>
             </div>
         </section>
         <section class="page_info">

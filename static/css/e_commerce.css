@@ -30,6 +30,15 @@ a {
     text-decoration: none;
     color: #000000;
 }
+label {
+    color: #757575;
+}
+.drop_down {
+    border: none;
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 16px;
+}
 
 /*Header*/
 #h3_header h3 {
@@ -77,7 +86,7 @@ li a {
 }
 
 /*Main Content*/
-.main_content, .page_info {
+.main_content, .page_info, .cart_prd_list {
     width: 80%;
     margin: auto;
 }
@@ -145,12 +154,36 @@ li a {
     justify-self: start;
     padding: 20px;
 }
+.size_qty {
+    margin-top: 30px;
+}
+.size_qty > div {
+    border-top: 1px solid #757575;
+    padding: 15px 0px ;
+}
+#qty, #size {
+    margin: 0;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    width: 83%;
+}
+.prd_qty {
+    border-bottom: 1px solid #757575;
+}
+.prd_size  select {
+    float: right;
+}
+.prd_qty select {
+    float: right;
+}
+
 .prd_desc > p {
     font-size: 30px;
     margin: 0px 0px 10px 0px;
 }
 .short_desc {
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 .short_desc p, ul {
     color: #757575;
@@ -161,6 +194,7 @@ li a {
 .short_desc ul li {
     margin-left: 25px;
 }
+
 @media screen and (min-width: 1250px) {
     #product_desc {
         grid-template-columns: repeat(2, 1fr);
@@ -169,4 +203,48 @@ li a {
     #product_desc .prd_desc {
         width: 50%;
     }
+}
+
+/*Cart Page*/
+.cart_info, .checkout_info {
+    color: #757575;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.img_name > div {
+    float: left;
+    padding: 10px;
+    margin-top: 20px;
+}
+.qty_size_price > div {
+    float: right;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#cart_prd_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+}
+.cart_prd_list .cart_total {
+    float: right;
+    position: relative;
+    top: 60px;
+    right: 150px;
+}
+
+/*Checkout Page*/
+.checkout_page {
+    width: 60%;
+    margin: auto;
+}
+.checkout_summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: start;
+    border: 1px solid black;
 }
