@@ -206,7 +206,7 @@ li a {
 }
 
 /*Cart Page*/
-.cart_info {
+.cart_info, .checkout_info {
     color: #757575;
     font-size: 16px;
     text-align: center;
@@ -234,4 +234,17 @@ li a {
     position: relative;
     top: 60px;
     right: 150px;
+}
+
+/*Checkout Page*/
+.checkout_page {
+    width: 60%;
+    margin: auto;
+}
+.checkout_summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: start;
+    border: 1px solid black;
 }
