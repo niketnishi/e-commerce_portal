@@ -312,11 +312,11 @@ li a {
 .checkout_prd {
     float: left;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .prd_price {
     margin-right: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .form_label {
     color: #000000;
@@ -350,6 +350,9 @@ li a {
     }
     .hide {
         display: block;
+    }
+    .prd_price, .checkout_prd {
+        margin-bottom: 20px;
     }
     #add_to_cart, #cart_checkout, #place_order {
         padding: 10px 30px;
