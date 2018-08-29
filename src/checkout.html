@@ -32,21 +32,21 @@
                         <p><strong>Shipping Address</strong></p>
                         <input type="text" name="address" placeholder="Address">
                         <input type="text" name="city" placeholder="City">
-                        <input type="text" name="state" placeholder="State/Province">
-                        <input type="number" name="zip" placeholder="Zip/Postal Code">
-                        <label for="country" style="color: #000000;">Country</label>
-                        <select id="country" name="country" class="drop_down">
+                        <input type="text" name="state" placeholder="State/Province" class="inline_input">
+                        <input type="number" name="zip" placeholder="Zip/Postal Code" class="inline_input"><br/>
+                        <label for="country"  class="form_label">Country</label><br/>
+                        <select id="country" name="country" class="drop_down" style="width: 92%;margin-left: 10px;font-size:18px;">
                             <option>India</option>
                             <option>United States</option>
                         </select>
                         <p><strong>Billing Address</strong></p>
-                        <input type="checkbox" name="bill_add">Use different billing address<br/>
+                        <input type="checkbox" name="bill_add" class="inline_input">Use different billing address<br/>
                         <input type="text" name="address" placeholder="Address">
                         <input type="text" name="city" placeholder="City">
-                        <input type="text" name="state" placeholder="State/Province">
-                        <input type="number" name="zip" placeholder="Zip/Postal Code">
-                        <label for="coun" style="color: #000000;">Country</label>
-                        <select id="coun" name="country" class="drop_down">
+                        <input type="text" name="state" placeholder="State/Province" class="inline_input">
+                        <input type="number" name="zip" placeholder="Zip/Postal Code" class="inline_input"><br/>
+                        <label for="coun" class="form_label">Country</label><br/>
+                        <select id="coun" name="country" class="drop_down" style="width: 92%;margin-left: 10px;font-size:18px;">
                             <option>India</option>
                             <option>United States</option>
                         </select>
@@ -55,7 +55,7 @@
                         <p><strong>Payment Method</strong></p>
                         <input type="text" name="card_holder_name" placeholder="Cardholder Name">
                         <input type="number" name="card_number" placeholder="Card Number">
-                        <label for="month" style="color: #000000;">Expiry</label>
+                        <label for="month" class="form_label">Expiry</label><br/>
                         <select id="month" name="month" class="drop_down">
                             <option>Jan</option>
                             <option>Feb</option>
@@ -81,24 +81,28 @@
                             <option>2025</option>
                             <option>2026</option>
                         </select>
-                        <input type="number" name="cvv" placeholder="CVV">
+                        <input type="number" name="cvv" placeholder="CVV" id="cvv_input">
                         <p><strong>Order Summary</strong></p>
                         <div>
-                            <div>
+                            <div class="checkout_prd">
                                 <p>Men's Tech Shell Full-Zip</p>
                                 <p>Men's Tech Shell Full-Zip</p>
                                 <p>Men's Tech Shell Full-Zip</p>
                             </div>
-                            <div>
+                            <div class="prd_price">
                                 <p>$50.20</p>
                                 <p>$50.20</p>
                                 <p>$50.20</p>
                             </div>
                         </div>
-                        <button type="submit" name="submit">PLACE ORDER</button>
+                        <button type="submit" name="submit" id="place_order">PLACE ORDER</button>
                     </div>
                 </section>
             </form>
+        </section>
+        <section class="page_info hide">
+            <p><a href="https://www.polymer-project.org/2.0/toolbox/" target="_self">Made by Polymer</a></p>
+            <span>DEMO ONLY</span>
         </section>
     </body>
 </html>
