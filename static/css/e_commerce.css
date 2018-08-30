@@ -257,7 +257,7 @@ li a {
 #cart_prd_list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
+    grid-gap: 3em;
 }
 .cart_prd_list .cart_total {
     float: right;
