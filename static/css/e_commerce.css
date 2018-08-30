@@ -111,6 +111,7 @@ li a {
     font-size: 13px;
     position: relative;
     bottom: 0px;
+    margin-top: 120px;
 }
 .hide {
     display: none;
@@ -207,6 +208,10 @@ li a {
     padding: 20px;
     font-size: 18px;
 }
+.cart_total span {
+    display: inline-block;
+    margin-bottom: 100px;
+}
 @media screen and (min-width: 1250px) {
     #product_desc {
         grid-template-columns: repeat(2, 1fr);
@@ -226,6 +231,8 @@ li a {
         width: auto;
         background-color: #ffffff;
         color: #000000;
+        padding: 10px 30px;
+        font-size: 13px;
     }
     .short_desc {
         margin: 30px;
@@ -251,23 +258,30 @@ li a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1em;
-    justify-items: center;
 }
 .cart_prd_list .cart_total {
     float: right;
     position: relative;
     top: 60px;
-    right: 150px;
+    right: 10px;
+}
+.qty_size_price > div {
+    float: right;
+    padding: 10px;
+    margin-left: 10px;
 }
 .img_name img {
-    width: 200px;
-    height: 200px;
-    margin: auto;
+    float: left;
+    width: 72px;
+    height: 72px;
 }
 @media screen and (min-width: 1470px) {
     .cart_prd_list {
         width: 80%;
         margin: auto;
+    }
+    .cart_prd_list .cart_total {
+        right: 140px;
     }
 }
 @media screen and (min-width: 950px) {
@@ -277,17 +291,13 @@ li a {
         margin-top: 20px;
     }
     .qty_size_price > div {
-        float: right;
-        padding: 10px;
         margin-top: 20px;
         margin-left: 100px;
     }
-    #cart_prd_list {
-        justify-items: stretch;
-    }
-    .img_name img {
-        width: 72px;
-        height: 72px;
+}
+@media screen and (min-width: 550px) {
+    .qty_size_price > div {
+        margin-left: 50px;
     }
 }
 /*Checkout Page*/
@@ -354,7 +364,7 @@ li a {
     .prd_price, .checkout_prd {
         margin-bottom: 20px;
     }
-    #add_to_cart, #cart_checkout, #place_order {
+    #place_order {
         padding: 10px 30px;
         font-size: 13px;
     }
