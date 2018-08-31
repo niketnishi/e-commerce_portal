@@ -24,6 +24,7 @@ button {
     background-color: #ffffff;
     text-align: center;
     cursor: pointer;
+    outline: none;
 }
 a {
     text-decoration: none;
@@ -46,6 +47,7 @@ input {
     border: none;
     border-bottom: 1px solid #757575;
     width: 92%;
+    outline: none;
 }
 /*Header*/
 #h3_header h3 {
